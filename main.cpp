@@ -89,15 +89,79 @@ int main() {
             else {
                 printf("\n");
             }
-            printf("5. Obsidian Pickaxe (50000 gold)\n");
-            printf("6. Bedrock Pickaxe (100000 gold)\n");
-            printf("7. Terra Pickaxe (250000 gold)\n");
-            printf("8. Sun Pickaxe (500000 gold)\n");
-            printf("9. Space Pickaxe (1000000 gold)\n");
-            printf("10. Death Pickaxe (1500000 gold)\n");
-            printf("11. Extraordisn Pickaxe (2000000 gold)\n");
-            printf("12. Temple Pickaxe (2500000 gold)\n");
-            printf("13. Insanedition Pickaxe (10000000 gold)\n");
+            
+            printf("5. Obsidian Pickaxe (50000 gold)");
+            if(pickaxe != "wood" and pickaxe != "noob" and pickaxe != "stone" and pickaxe != "diamond" and pickaxe!="rubic") {
+                printf(" (you already own this pickaxe)\n");
+            }
+            else {
+                printf("\n");
+            }
+            
+            printf("6. Bedrock Pickaxe (100000 gold)");
+            if(pickaxe != "wood" and pickaxe != "noob" and pickaxe != "stone" and pickaxe != "diamond" and pickaxe!="rubic" and pickaxe != "obsidian") {
+                printf(" (you already own this pickaxe)\n");
+            }
+            else {
+                printf("\n");
+            }
+            
+            printf("7. Terra Pickaxe (250000 gold)");
+            if(pickaxe != "wood" and pickaxe != "noob" and pickaxe != "stone" and pickaxe != "diamond" and pickaxe!="rubic" and pickaxe != "obsidian" and pickaxe!="bedrock") {
+                printf(" (you already own this pickaxe)\n");
+            }
+            else {
+                printf("\n");
+            }
+            
+            printf("8. Sun Pickaxe (500000 gold)");
+            if(pickaxe != "wood" and pickaxe != "noob" and pickaxe != "stone" and pickaxe != "diamond" and pickaxe!="rubic" and pickaxe != "obsidian" and pickaxe!="bedrock" and pickaxe!="terra") {
+                printf(" (you already own this pickaxe)\n");
+            }
+            else {
+                printf("\n");
+            }
+            
+            printf("9. Space Pickaxe (1000000 gold)");
+            if(pickaxe != "wood" and pickaxe != "noob" and pickaxe != "stone" and pickaxe != "diamond" and pickaxe!="rubic" and pickaxe != "obsidian" and pickaxe!="bedrock" and pickaxe!="terra" and pickaxe!="sun") {
+                printf(" (you already own this pickaxe)\n");
+            }
+            else {
+                printf("\n");
+            }
+            
+            printf("10. Death Pickaxe (1500000 gold)");
+            if(pickaxe != "wood" and pickaxe != "noob" and pickaxe != "stone" and pickaxe != "diamond" and pickaxe!="rubic" and pickaxe != "obsidian" and pickaxe!="bedrock" and pickaxe!="terra" and pickaxe!="sun" and pickaxe!="space") {
+                printf(" (you already own this pickaxe)\n");
+            }
+            else {
+                printf("\n");
+            }
+            
+            printf("11. Extraordisn Pickaxe (2000000 gold)");
+            if(pickaxe != "wood" and pickaxe != "noob" and pickaxe != "stone" and pickaxe != "diamond" and pickaxe!="rubic" and pickaxe != "obsidian" and pickaxe!="bedrock" and pickaxe!="terra" and pickaxe!="sun" and pickaxe !="space" and pickaxe!="death") {
+                printf(" (you already own this pickaxe)\n");
+            }
+            else {
+                printf("\n");
+            }
+            
+            printf("12. Temple Pickaxe (2500000 gold)");
+            if(pickaxe != "wood" and pickaxe != "noob" and pickaxe != "stone" and pickaxe != "diamond" and pickaxe!="rubic" and pickaxe != "obsidian" and pickaxe!="bedrock" and pickaxe!="terra" and pickaxe!="sun" and pickaxe != "space" and pickaxe!="death" and pickaxe!="extraordisn") {
+                printf(" (you already own this pickaxe)\n");
+            }
+            else {
+                printf("\n");
+            }
+            
+            printf("13. Insanedition Pickaxe (10000000 gold)");
+            if(pickaxe != "wood" and pickaxe != "noob" and pickaxe != "stone" and pickaxe != "diamond" and pickaxe!="rubic" and pickaxe != "obsidian" and pickaxe!="bedrock" and pickaxe!="terra" and pickaxe!="sun" and pickaxe != "space" and pickaxe!="death" and pickaxe!="extraordisn" and pickaxe!="temple") {
+                printf(" (you already own this pickaxe)\n");
+            }
+            else {
+                printf("\n");
+            }
+            
             printf("14. Leave\n");
             printf("\nDo you want to buy something?\n");
             printf("Command: \n");
@@ -156,13 +220,76 @@ int main() {
                     balance -= 50000;
                 }
             }
-            else if(choice==2) {
-                if(balance<1000) {
+            else if(choice==6) {
+                if(balance<100000) {
                     cout << "You don't have money for this item dumb fucker." << endl;
                 }
                 else {
-                    pickaxe == "stone";
-                    balance -= 1000;
+                    pickaxe = "bedrock";
+                    balance -= 100000;
+                }
+            }
+            else if(choice==7) {
+                if(balance<250000) {
+                    cout << "You don't have money for this item dumb fucker." << endl;
+                }
+                else {
+                    pickaxe = "terra";
+                    balance -= 250000;
+                }
+            }
+            else if(choice==8) {
+                if(balance<500000) {
+                    cout << "You don't have money for this item dumb fucker." << endl;
+                }
+                else {
+                    pickaxe = "sun";
+                    balance -= 500000;
+                }
+            }
+            else if(choice==9) {
+                if(balance<1000000) {
+                    cout << "You don't have money for this item dumb fucker." << endl;
+                }
+                else {
+                    pickaxe = "space";
+                    balance -= 1000000;
+                }
+            }
+            else if(choice==10) {
+                if(balance<1500000) {
+                    cout << "You don't have money for this item dumb fucker." << endl;
+                }
+                else {
+                    pickaxe = "death";
+                    balance -= 1500000;
+                }
+            }
+            else if(choice==11) {
+                if(balance<2000000) {
+                    cout << "You don't have money for this item dumb fucker." << endl;
+                }
+                else {
+                    pickaxe = "extraordisn";
+                    balance -= 2000000;
+                }
+            }
+            else if(choice==12) {
+                if(balance<2500000) {
+                    cout << "You don't have money for this item dumb fucker." << endl;
+                }
+                else {
+                    pickaxe = "temple";
+                    balance -= 2500000;
+                }
+            }
+            else if(choice==13) {
+                if(balance<10000000) {
+                    cout << "You don't have money for this item dumb fucker." << endl;
+                }
+                else {
+                    pickaxe = "insanedition";
+                    balance -= 10000000;
                 }
             }
         }
@@ -193,47 +320,47 @@ int main() {
                 balance += earned_amount;
             }
             else if(pickaxe=="obsidian") {
-                int earned_amount = rand() % 5000 + 7500;
+                int earned_amount = rand() % 30 + 7500;
                 cout << "You earned " << earned_amount << "!" << endl;
                 balance += earned_amount;
             }
             else if(pickaxe=="bedrock") {
-                int earned_amount = rand() % 50 + 100;
+                int earned_amount = rand() % 30 + 15000;
                 cout << "You earned " << earned_amount << "!" << endl;
                 balance += earned_amount;
             }
             else if(pickaxe=="terra") {
-                int earned_amount = rand() % 50 + 100;
+                int earned_amount = rand() % 30 + 25000;
                 cout << "You earned " << earned_amount << "!" << endl;
                 balance += earned_amount;
             }
             else if(pickaxe=="sun") {
-                int earned_amount = rand() % 50 + 100;
+                int earned_amount = rand() % 30 + 50000;
                 cout << "You earned " << earned_amount << "!" << endl;
                 balance += earned_amount;
             }
             else if(pickaxe=="space") {
-                int earned_amount = rand() % 50 + 100;
+                int earned_amount = rand() % 30 + 75000;
                 cout << "You earned " << earned_amount << "!" << endl;
                 balance += earned_amount;
             }
             else if(pickaxe=="death") {
-                int earned_amount = rand() % 50 + 100;
+                int earned_amount = rand() % 30 + 100000;
                 cout << "You earned " << earned_amount << "!" << endl;
                 balance += earned_amount;
             }
             else if(pickaxe=="extraordisn") {
-                int earned_amount = rand() % 50 + 100;
+                int earned_amount = rand() % 30 + 150000;
                 cout << "You earned " << earned_amount << "!" << endl;
                 balance += earned_amount;
             }
             else if(pickaxe=="temple") {
-                int earned_amount = rand() % 50 + 100;
+                int earned_amount = rand() % 30 + 250000;
                 cout << "You earned " << earned_amount << "!" << endl;
                 balance += earned_amount;
             }
             else if(pickaxe=="Insanedition") {
-                int earned_amount = rand() % 50 + 100;
+                int earned_amount = rand() % 30 + 1000000;
                 cout << "You earned " << earned_amount << "!" << endl;
                 balance += earned_amount;
             }

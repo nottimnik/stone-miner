@@ -5,8 +5,12 @@
 
 #include<iostream>
 #include<stdlib.h>
+#include<chrono>
+#include<thread>
 
 using namespace std;
+using namespace std::this_thread;
+using namespace std::chrono;
 
 int main() {
     
@@ -294,6 +298,55 @@ int main() {
             }
         }
         else if(choice==2) {
+
+            cout << "Mining..." << endl;
+            sleep_for(nanoseconds(10));
+            sleep_until(system_clock::now() + seconds(1));
+
+            system("clear");
+
+            cout << "Mining.." << endl;
+            sleep_for(nanoseconds(10));
+            sleep_until(system_clock::now() + seconds(1));
+
+            system("clear");
+
+            cout << "Mining." << endl;
+            sleep_for(nanoseconds(10));
+            sleep_until(system_clock::now() + seconds(1));
+
+            system("clear");
+
+            cout << "Mining.." << endl;
+            sleep_for(nanoseconds(10));
+            sleep_until(system_clock::now() + seconds(1));
+
+            system("clear");
+            
+            cout << "Mining..." << endl;
+            sleep_for(nanoseconds(10));
+            sleep_until(system_clock::now() + seconds(1));
+
+            system("clear");
+            cout << "Going back home.." << endl;
+            sleep_for(nanoseconds(10));
+            sleep_until(system_clock::now() + seconds(1));
+
+            system("clear");
+
+            cout << "Selling the Ores..." << endl;
+            sleep_for(nanoseconds(10));
+    sleep_until(system_clock::now() + seconds(1));
+
+            system("clear");
+
+            cout << "Selling the Ores.." << endl;
+            sleep_for(nanoseconds(10));
+    sleep_until(system_clock::now() + seconds(1));
+
+            system("clear");
+            cout << "Congratz! ";
+
             if(pickaxe=="noob") {
                 int earned_amount = rand() % 30 + 50;
                 cout << "You earned " << earned_amount << "!" << endl;
@@ -369,14 +422,17 @@ int main() {
                 cout << "You earned " << earned_amount << "!" << endl;
                 balance += earned_amount;
             }
+            
             cout << endl;
+
+
         }
         else if (choice==3) {
             return 0;
         }
         else {
-            cout << endl;
             cout << "Are you retarded peace of fking shit? This is not a valid command :/" << endl;
+            cout << endl;
         }
     }
     return 0;
